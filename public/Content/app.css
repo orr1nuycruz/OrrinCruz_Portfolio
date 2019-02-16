@@ -1,0 +1,32 @@
+/* custom css goes here */
+
+/* Orrin Cruz - 300898431 
+    February 16, 2019--> */
+
+body {
+    font-family: 'Oswald', sans-serif !important;
+  }
+
+.allpage{
+    background-color: #ffb366 ;
+}
+
+.logoimg{
+    height: 30%;
+    width: 30%;
+}
+
+.logoimg2{
+    height: 80%;
+    width: 60%;
+}
+
+.logoimg3{
+    height: 90%;
+    width: 35%;
+}
+
+.logoimg4{
+    height: 110%;
+    width: 100%;
+}
