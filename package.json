@@ -1,5 +1,5 @@
 {
-  "name": "comp308_assignment01",
+  "name": "orrincruz_portfolio",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -21,7 +21,7 @@
     "morgan": "~1.9.0",
     "popper.js": "^1.14.7"
   },
-  "description": "Assignment 01",
+  "description": "Orrin Cruz Portfolio",
   "main": "server.js",
   "devDependencies": {
     "@types/body-parser": "^1.17.0",

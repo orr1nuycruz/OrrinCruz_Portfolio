@@ -17,8 +17,8 @@ router.get('/projects', function(req, res, next) {
   res.render('content', { title: 'Projects' });
 });
 
-router.get('/services', function(req, res, next) {
-  res.render('content', { title: 'Services' });
+router.get('/skills', function(req, res, next) {
+  res.render('content', { title: 'Skills' });
 });
 
 router.get('/contact', function(req, res, next) {
