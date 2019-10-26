@@ -6,7 +6,10 @@
 body {
     font-family: 'Oswald', sans-serif !important;
   }
-
+  
+.fontfam1{
+    font-family: Impact, Charcoal, sans-serif;
+}
 .allpage{
     background-color: #ffb366 ;
 }

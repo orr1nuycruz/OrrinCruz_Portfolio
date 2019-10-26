@@ -5,10 +5,10 @@
   "scripts": {
     "start": "node server.js"
   },
-"engines" : {
-  "node" : "^10.15.0",
-  "npm" : "^6.0.0"
-},
+  "engines": {
+    "node": "^10.15.0",
+    "npm": "^6.0.0"
+  },
   "dependencies": {
     "bootstrap": "^4.2.1",
     "cookie-parser": "~1.4.3",

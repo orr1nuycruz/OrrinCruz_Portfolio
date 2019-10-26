@@ -6,7 +6,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title><%= title %></title>
     <!-- CSS section -->
@@ -19,9 +19,9 @@
     <header>
       <!-- Main Navbar -->
       <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #80002a;">
-        <a class="navbar-brand" href="/">
+        <a class="navbar-brand lead" href="/">
           <img src="Assets/images/logo.PNG" class="logoimg">
-          <%=title%></a>
+          <p class="fontfam1"><strong>Orrin Cruz</strong></p></a>
         <button
           class="navbar-toggler"
           type="button"
@@ -35,7 +35,7 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
+          <ul class="navbar-nav ml-auto ">
             <%if(title == "Home") { %>
             <li class="nav-item active"><% } else { %></li>
             <li class="nav-item">
