@@ -1,0 +1,34 @@
+<% include ../partials/header.ejs %>
+
+<!-- Contact Info for Index page -->
+<div class="container">
+    <div class="jumbotron">
+        <div class="row">
+            <div class="col-md-offsetr-3 col-md-6">
+                <h1> <%= title %></h1>
+                <a class="btn btn-primary" href="/contact-list/add" role="button">
+                <i class="fa fa-plus-circle"></i> Add a Person</a>
+                <br>
+                <table class="table table-bordered table-striped table-hover">
+                    <!-- header row -->
+                    <tr>
+                        <th class="text-center">First Name</th>
+                        <th class="text-center">Last Name</th>
+                        <th class="text-center">Age</th>
+                    </tr>
+                    <!-- Repeatable Row for content -->
+                    <% for(let count = 0; count < contactList.length; count++) { %>
+                        <tr>
+                            <td class="text-center"><%= contactList[count].firstName %></td>
+                            <td class="text-center"><%= contactList[count].lastName %></td>
+                            <td class="text-center"><%= contactList[count].age %></td>
+                        </tr>
+                    <% } %>
+                </table>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<% include ../partials/footer.ejs %>
