@@ -17,8 +17,7 @@
         });
 
         /*
-        document.querySelectorAll(".btn-danger").addEventListener("click", () =>{
-
+        document.querySelectorAll(".btn-danger").addEventListener("click", () =>{s
         }); 
         */
     }
