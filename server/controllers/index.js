@@ -58,13 +58,34 @@ module.exports.displayLoginPage = (req, res, next) => {
     // TODO
 }
 
-module.exports.processLoginPage =
-    passport.authenticate('local', {
-        successRedirect: '/contact-list',
-        failureRedirect: '/login',
-        failureFlash: 'loginMessage',
-        failureMessage: 'Authentication Error'
-    });
+// module.exports.processLoginPage =
+//     passport.authenticate('local', {
+//         successRedirect: '/contact-list',
+//         failureRedirect: '/login',
+//         failureFlash: 'loginMessage',
+//         failureMessage: 'Authentication Error'
+// });
+
+module.exports.processLoginPage = (req, res, next) => {
+    console.log(req.body.username);
+    console.log(req.body.password);
+    passport.authenticate('local', 
+    (err, user, info) =>{
+        if(err){
+            return next(err);
+        }
+        if(!user){
+            req.flash("loginMessage", "Authentication Error");
+            return res.redirect('/login');
+        }
+        req.logIn(user, (err) =>{
+            if(err){
+                return next(err);
+            }
+            return res.redirect('/contact-list');
+        });
+    })(req, res, next);
+}
 // TODO
 
 
