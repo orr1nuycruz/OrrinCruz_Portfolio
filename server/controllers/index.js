@@ -22,6 +22,9 @@ module.exports.displayContactPage = (req, res, next) => {
 }
 
 module.exports.displayLoginPage = (req, res, next) =>{
+    res.render('auth/login', {
+        title: 'Login'
+    });
     // TODO
 }
 
