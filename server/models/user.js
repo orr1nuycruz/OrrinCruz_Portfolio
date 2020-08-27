@@ -35,7 +35,6 @@ let userSchema = mongoose.Schema({
 });
 
 // configure options for the UserSchema
-
 let options = ({
     missingPasswordError: "Wrong/ Missing Password"
 });
