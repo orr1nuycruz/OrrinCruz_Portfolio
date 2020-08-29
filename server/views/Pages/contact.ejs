@@ -3,33 +3,37 @@
 
 
 <main class="container">
-      <!-- Main Content -->
-      <div class="jumbotron">
+    <!-- Main Content -->
+    <div class="jumbotron">
         <h1 class="fontfam1">Contact Me</h1>
 
         <p class="lead">
-        Send me a message. I would like to hear your thoughts about me.
+            Send me a message. I would like to hear your thoughts about me.
         </p>
 
         <p>
-        Personal Email: orrincruz98@gmail.com
+            Personal Email: orrincruz98@gmail.com
         </p>
-        <div class="container"style="margin-top: 20px;">
+        <div class="container" style="margin-top: 20px;">
             <div class="row">
                 <div class="col-sm wow fadeIn" data-wow-duration="1s">
                     <a class="linkedincolor" href="https://www.linkedin.com/in/orrin-cruz-a35323179/">
-                      <i class="fa fa-linkedin-square big-icon" aria-hidden="true"></i>
-                      <br>
-                          <p>Linkedin</p>
-                      </a>
+                        <i class="fa fa-linkedin-square big-icon" aria-hidden="true"></i>
+                        <br>
+                        <p>Linkedin</p>
+                    </a>
                 </div>
             </div>
         </div>
+        <%if (typeof displayName == 'string' && displayName) { %>\
         <hr class="my-4" />
         <h1 class="fontfam1">CRUD Function</h1>
         <a class="btn btn-primary" role="button" href="/contact-list">
             <h3 class="fontfam1">START</h1>
-            </a>
-       
-      </div>
+        </a>
+
+        <% } %>
+
+
+    </div>
 </main>
