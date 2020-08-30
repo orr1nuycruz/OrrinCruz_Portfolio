@@ -10,17 +10,11 @@ module.exports.displayContactList = (req, res, next) => {
             return console.error(err);
         }
         else {
-            if (!req.user) {
-                res.redirect('/login');
-            }
-            else {
-                //console.log(contactList);
-                res.render('contacts/index', {
-                    title: "Contact List",
-                    contactList: contactList,
-                    displayName: req.user ? req.user.displayName : ''
-                });
-            }
+            res.render('contacts/index', {
+                title: "Contact List",
+                contactList: contactList,
+                displayName: req.user ? req.user.displayName : ''
+            });
         }
     });
 }
